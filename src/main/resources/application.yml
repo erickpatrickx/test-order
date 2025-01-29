@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: order
+
+aws:
+  sqs:
+    endpoint: http://localhost:4566
+    queue:
+      order: /000000000000/order-queue
+      order-amout: /000000000000/order-amount-queue
+  dynamodb:
+    endpoint: http://localhost:8000
